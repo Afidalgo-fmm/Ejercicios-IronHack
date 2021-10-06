@@ -53,4 +53,4 @@ if x <50:
 elif 50<= x <70:
     print('estas aprobado sigue estudiando')
 else:
-    print('felicidades crack cacho nota loco.')
+    print('felicidades cacho nota.')
