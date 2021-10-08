@@ -29,7 +29,7 @@ for i in range(1, 6, 2):
     print(i*'*')
 
 #1.4 no he sido capaz de sacarlo solo
-# space = 2
+space = 2
 for i in range(1,6,2):
     print(space*" ",i*"*")
     space = space - 1
