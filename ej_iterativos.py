@@ -33,3 +33,43 @@ space = 2
 for i in range(1,6,2):
     print(space*" ",i*"*")
     space = space - 1
+
+#1.5
+n = int(input('introduce un numero entero: '))
+print(math.factorial(n))
+rfactorial = 1
+for n in range(2,rfactorial+1):
+    rfactorial  = rfactorial*n
+if rfactorial == math.factorial(n):
+    print('El factorial es: ',rfactorial)
+else:
+    print('esta mal')
+    
+#2.Bucles iterativos con listas
+'''
+2.1
+Write a code to find only those numbers that are divisible by 3.
+Write a code to find only those numbers in the list that end with the digit 3. 
+Find the minimum in the list x
+Find the maximun in the list x
+'''
+#2.1
+
+x = [12,43,4,1,6,343,10, 34, 12, 93, 783, 330, 896, 1, 55]
+y = []
+for i in x:
+    if i%3 ==0:
+        y.append(i)
+
+print('Los numeros divisibles son: ', y)
+
+j = []
+for i in x:
+    i = str(i)
+    digit = i[-1]
+    if digit == '3':
+        j.append(i)
+print(j)
+max(x)
+min(x)    
+    
