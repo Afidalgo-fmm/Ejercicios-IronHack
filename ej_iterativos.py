@@ -73,3 +73,21 @@ print(j)
 max(x)
 min(x)    
     
+#3 Bucles iterativos con Diccionarios
+'''
+Iterate on the items of this dictionary to print only those keys where the frequency of the word is less than 3.
+Which is the word with the highest frequency?
+
+'''
+#3.1
+word_freq = {'love': 25, 'conversation': 1, 'every': 6, "we're": 1, 'plate': 1, 'sour': 1, 'jukebox': 1, 'now': 11, 'taxi': 1, 'fast': 1, 'bag': 1, 'man': 1, 'push': 3, 'baby': 14, 'going': 1, 'you': 16, "don't": 2, 'one': 1, 'mind': 2, 'backseat': 1, 'friends': 1, 'then': 3, 'know': 2}
+
+for palabra, frecuencia in word_freq.items():
+    if frecuencia < 3 :
+        print(palabra)
+        
+
+frecuencias = list(word_freq.values())
+for palabra, frecuencia in word_freq.items():
+    if frecuencia == max(frecuencias):
+        print(palabra)
